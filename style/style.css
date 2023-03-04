@@ -86,11 +86,18 @@ h2 {
     text-align: start;
 }
 
+#team {
+    display: grid;
+    justify-items: center;
+}
+
 .team-holder {
     border: 1px solid white;
     width: clamp(60%, calc(1000px + 15vw), 90%);
     display: grid;
     grid-template-columns: 1fr 5fr;
+    align-items: center;
+    align-self: center;
 }
 
 .photo {
