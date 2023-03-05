@@ -20,6 +20,7 @@ body {
 .nav-panel {
     background: linear-gradient(0.875turn, #380036, #0ea7a7);
     position: fixed;
+    padding: 0px 5px;
     height: 5vh;
     top: 0;
     left: 0;
@@ -56,14 +57,16 @@ h2 {
     color: white;
 }
 
-#overview {
+#overview, 
+#mission {
     display: grid;
     grid-template-rows: 1fr 7fr;
     align-items: center;
     justify-items: center;
 }
 
-.overview-text {
+.overview-text,
+.mission-text {
     width: clamp(50%, calc(1000px + 10vw) ,90%);
     background-color: rgba(82, 82, 82, 0.7);
     display: flex;
@@ -72,9 +75,11 @@ h2 {
     gap: 20px;
     padding: 20px;
     margin-top: -100px;
+    border-radius: 5px;
 }
 
-.quote {
+.quote,
+.m-txt {
     font-size: calc(1rem + 0.6vw);
     font-style: italic;
 }
@@ -87,8 +92,10 @@ h2 {
 }
 
 #team {
-    display: grid;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
 }
 
 .team-holder {
@@ -97,7 +104,6 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 5fr;
     align-items: center;
-    align-self: center;
 }
 
 .photo {
